@@ -323,7 +323,8 @@ body {
         gap: 1rem;                   /* Space between icons */
         position: absolute;          /* Position them within #hero */
         bottom: 3rem;                /* Adjust vertical space */
-        right: 2rem;                 /* Align to the right */
+        right: 2rem;      
+        /* display: none;           Align to the right */
     }
 
     #hero .social-icon {
