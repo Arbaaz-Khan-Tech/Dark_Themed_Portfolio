@@ -318,7 +318,7 @@ body {
 
     /* Display the social links on mobile and position them */
     #hero .social-links {
-        display: flex;              /* Make it visible */
+        display: none;              /* Make it visible */
         flex-direction: column;      /* Stack the icons vertically */
         gap: 1rem;                   /* Space between icons */
         position: absolute;          /* Position them within #hero */
