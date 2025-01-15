@@ -393,7 +393,7 @@ body {
 
 #about {
     padding: 6rem 2rem;
-    background: var(--color-background);
+   
     color: #ffffff;
 }
 
@@ -556,7 +556,7 @@ body {
 /* <!-- <<<<<<<<<<<<<---------------------------SKILLS  --------------------------------------------------------- --> */
 #skills {
     padding: 4rem 0;
-    background-color: #0a0a0a;
+   
     color: #fff;
 }
 
