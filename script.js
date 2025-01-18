@@ -183,7 +183,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
+function toggleOverlay(element) {
+    const card = element.closest('.project-card');
+    const overlay = card.querySelector('.project-overlay');
+    overlay.classList.toggle('active');
+}
 
 
 // ----------------------------------------------projects------------------------------------------

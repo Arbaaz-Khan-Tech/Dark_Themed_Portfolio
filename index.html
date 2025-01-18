@@ -41,7 +41,7 @@
 
     <main>
         <section class="hero">
-            <h1>John Doe</h1>
+            <h1>Arbaaz Khan</h1>
             <h2>Cybersecurity Enthusiast & Web Developer</h2>
             <p>Securing digital landscapes and crafting innovative web solutions to protect and empower businesses in the digital age.</p>
             <div class="skills">
@@ -51,7 +51,7 @@
                 <span class="skill">JavaScript</span>
                 <span class="skill">Network Security</span>
             </div>
-            <button class="cta">Explore My Work</button>
+            <button class="cta" > <a href="#projects" style="text-decoration: none ">Explore My Work</a></button>
         </section>
     
         <div class="social-container">
@@ -198,98 +198,152 @@
 
 
 
-        <section class="projects">
-            <h1>My Projects</h1>
-            <div class="projects-grid">
-                <div class="project-card left">
-                    <div class="laptop-frame">
-                        <img src="firebot.png" alt="Project 1 Screenshot">
+        <div class="portfolio-header" id="projects">
+            <h2>My Projects</h2>
+        </div>
+    
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/firebot.png" alt="Shoptidy Project" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">FireBot</h3>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">IPSCAN</span>
+                        <span class="tag">OCR</span>
                     </div>
-                    <h2>FireBot</h2>
-                    <ul>
-                        <li>Developed a tool to monitor camera statuses, detect malicious links, and capture network traffic for suspicious IP detection.</li>
-                        <li>Integrated encryption and decryption for secure message exchanges.</li>
-                        <li>Implemented automated IP safety checks and password strength assessments.</li>
-                        <li>Added password generation and real-time security alerts with an interactive UI.</li>
-                        
-                    </ul>
-                    <div class="card-buttons">
-                        <a href="https://github.com/Arbaaz-Khan-Tech/Fire-bot" class="btn btn-source" target="_blank"><i class="fas fa-code"></i> View Source Code</a>
-                        <button class="btn btn-learn-more">Learn More</button>
-                    </div>
-                    <div class="card-details">
-                        <h3>Technologies Used</h3>
-                        <p>Python, Flask, OCR</p>
-                       
-                        <button class="btn btn-close">Close</button>
+                    <div class="project-actions">
+                        <button class="action-button" onclick="toggleOverlay(this)">
+                            Learn More
+                        </button>
+                        <a href="https://github.com/Arbaaz-Khan-Tech/Fire-bot" target="_blank" class="action-button">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                            Source Code
+                        </a>
                     </div>
                 </div>
-                <div class="project-card right">
-                    <div class="laptop-frame">
-                        <img src="EduNavigator.png" alt="Project 2 Screenshot">
+                <div class="project-overlay">
+                    <button class="close-overlay" onclick="toggleOverlay(this)">×</button>
+                    <div class="project-description">
+                        <h3>FireBot</h3>
+                        <li>Developed a tool to monitor camera statuses, detect malicious links, and capture network traffic for suspicious IP detection.</li>
+                            <li>Integrated encryption and decryption for secure message exchanges.</li>
+                            <li>Implemented automated IP safety checks and password strength assessments.</li>
+                            <li>Added password generation and real-time security alerts with an interactive UI.</li>
                     </div>
-                    <h2>EduNavigator</h2>
-                    <ul>
+                </div>
+            </div>
+    
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/EduNavigator.png" alt="SocialSphere Project" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">EduNavigator</h3>
+                    <div class="project-tags">
+                        <span class="tag">Express</span>
+                        <span class="tag">NodeJs</span>
+                        <span class="tag">Gemini</span>
+                        <span class="tag">MongoDB</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="action-button" onclick="toggleOverlay(this)">
+                            Learn More
+                        </button>
+                        <a href="https://github.com/Arbaaz-Khan-Tech/EduNavigator" target="_blank" class="action-button">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <button class="close-overlay" onclick="toggleOverlay(this)">×</button>
+                    <div class="project-description">
+                        <h3>EduNavigator</h3>
                         <li>AI-driven platform for personalized career guidance with skill insights.</li>
                         <li>Recommends colleges based on CET/JEE scores and provides admission guidance.</li>
                         <li>Plans to integrate mentorship with industry experts.</li>
-                        <li>Platform to be open source soon.</li>
-                    </ul>
-                    <div class="card-buttons">
-                        <a href="#" class="btn btn-source" style="pointer-events: none; color: #888;" target="_blank"><i class="fas fa-lock"></i> Available Soon</a>
-                        <button class="btn btn-learn-more">Learn More</button>
+                        <li>Platform to be open source soon.</li>                </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/Portfolio.png" alt="Shoptidy Project" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Personal Portfolio</h3>
+                    <div class="project-tags">
+                        <span class="tag">Html</span>
+                        <span class="tag">Css</span>
+                        <span class="tag">Js</span>
+                        
                     </div>
-                    <div class="card-details">
-                        <h3>Technologies Used</h3>
-                        <p>Node.js, Express, MongoDB</p>
-                        <button class="btn btn-close">Close</button>
+                    <div class="project-actions">
+                        <button class="action-button" onclick="toggleOverlay(this)">
+                            Learn More
+                        </button>
+                        <a href="https://github.com/Arbaaz-Khan-Tech/Fire-bot/Dark_Themed_Portfolio" class="action-button">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                            Source Code
+                        </a>
                     </div>
                 </div>
-                <div class="project-card left">
-                    <div class="laptop-frame">
-                        <img src="Portfolio.png" alt="Project 3 Screenshot">
-                    </div>
-                    <h2>Personal Portfolio</h2>
-                    <ul>
+                <div class="project-overlay">
+                    <button class="close-overlay" onclick="toggleOverlay(this)">×</button>
+                    <div class="project-description">
+                        <h3>Personal</h3>
                         <li>Interactive and Responsive Design</li>
-                        <li>Smooth User Experience</li>
-                        <li>Custom Styling</li>
-                    </ul>
-                    <div class="card-buttons">
-                        <a href="https://github.com/Arbaaz-Khan-Tech/Dark_Themed_Portfolio"  target="_blank" class="btn btn-source"><i class="fas fa-code"></i> View Source Code</a>
-                        <button class="btn btn-learn-more">Learn More</button>
-                    </div>
-                    <div class="card-details">
-                        <h3>Technologies Used</h3>
-                        <p>HTML, CSS, JS</p>
-                        <h3>Challenges Faced</h3>
-                        <button class="btn btn-close">Close</button>
+                            <li>Smooth User Experience</li>
+                            <li>Custom Styling</li>
                     </div>
                 </div>
-                <div class="project-card right">
-                    <div class="laptop-frame">
-                        <img src="Citizen.png" alt="Project 4 Screenshot">
+            </div>
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/Citizen.png" alt="Shoptidy Project" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Citizen Safety Dashboard</h3>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">SocketIo</span>
                     </div>
-                    <h2>Citizen Safety Dashboard</h2>
-                    <ul>
+                    <div class="project-actions">
+                        <button class="action-button" onclick="toggleOverlay(this)">
+                            Learn More
+                        </button>
+                        <a href="#" class="action-button" style="pointer-events: none; color: #888;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                            Source Code
+                        </a>
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <button class="close-overlay" onclick="toggleOverlay(this)">×</button>
+                    <div class="project-description">
+                        <h3>Citizen Safety Dashboard</h3>
                         <li>Live CCTV Feeds</li>
                         <li>Anomaly Detection</li>
                         <li>Crime Hotspot Map</li>
                         <li>SOS Function</li>
-
-                    </ul>
-                    <div class="card-buttons">
-                        <a href="#" class="btn btn-source" style="pointer-events: none; color: #888;" target="_blank"><i class="fas fa-spinner"></i> In Progress</a>
-                        <button class="btn btn-learn-more">Learn More</button>
-                    </div>
-                    <div class="card-details">
-                        <h3>Technologies Used</h3>
-                        <p>Python, Flask , keras</p>
-                        <button class="btn btn-close">Close</button>
                     </div>
                 </div>
             </div>
-        </section>
+    
+        </div>
 
 
 
