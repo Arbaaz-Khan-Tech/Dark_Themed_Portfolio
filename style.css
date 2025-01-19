@@ -84,6 +84,8 @@ body {
 
 .nav-link:hover {
     color: var(--color-text);
+    transform: translateY(-3px);
+    transition: ease-in-out 0.3s;
 }
 
 .nav-link.active {
@@ -450,7 +452,10 @@ body {
     height: 100%;
     object-fit: cover;
 }
-
+.profile-image img:hover{
+    transform: scale(1.1);
+    transition: ease-out 0.5s;
+}
 .image-accent-1 {
     position: absolute;
     top: -15px;
