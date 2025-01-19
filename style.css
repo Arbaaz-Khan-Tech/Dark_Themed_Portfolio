@@ -169,6 +169,10 @@ body {
     background: var(--gradient-primary);
 }
 
+.cta a{
+    color: inherit;
+    text-decoration: none;
+}
 .cta {
     background: var(--gradient-primary);
     color: var(--color-text);
