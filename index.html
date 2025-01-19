@@ -3,8 +3,31 @@
 
 <head>
     <meta charset="UTF-8">
+    
+    <meta name="description" content="Arbaaz Khan is a passionate cybersecurity enthusiast and web developer. Explore my portfolio showcasing expertise in web development, security practices, and creating secure, scalable applications.">
+
+    <!-- Meta Keywords -->
+    <meta name="keywords" content="cybersecurity, web developer, ethical hacking, web development, security, JavaScript, HTML, CSS, React, cybersecurity portfolio, Arbaaz Khan, cybersecurity enthusiast, full-stack developer">
+    
+    <!-- Viewport for Responsiveness -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbaaz Khan</title>
+    
+    <!-- Open Graph Tags for Social Media -->
+    <meta property="og:title" content="Arbaaz Khan - Cybersecurity Enthusiast & Web Developer">
+    <meta property="og:description" content="Discover the portfolio of Arbaaz Khan, a cybersecurity enthusiast and web developer with a focus on creating secure, user-friendly websites and applications.">
+    <meta property="og:image" content="https://arbaaz.xyz/path-to-your-image.jpg">
+    <meta property="og:url" content="https://arbaaz.xyz">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Arbaaz Khan - Cybersecurity Enthusiast & Web Developer">
+    <meta name="twitter:description" content="Explore Arbaaz Khan's portfolio, featuring web development projects and cybersecurity expertise aimed at securing digital assets and creating robust applications.">
+    <meta name="twitter:image" content="https://arbaaz.xyz/path-to-your-image.jpg">
+    
+    <!-- Author Tag -->
+    <meta name="author" content="Arbaaz Khan">
+    
+    <title>Arbaaz Khan - Cybersecurity Enthusiast & Web Developer</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 
@@ -94,20 +117,22 @@
                     <div class="about-description">
                         <p>As an aspiring cybersecurity enthusiast and web developer, I am passionate about learning the latest security trends, ethical hacking, and building secure web applications. I'm dedicated to honing my skills and actively working on projects that improve my understanding of cybersecurity and web development.</p>
                     </div>
-                    <!-- <div class="stats">
+                    <div class="stats">
                         <div class="stat-item">
-                            <span class="stat-number">6+</span>
-                            <span class="stat-label">Projects Completed</span>
+                            <span class="stat-number">1 Year+</span>
+                            <span class="stat-label">Experience</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">Learning</span>
-                            <span class="stat-label">Cybersecurity Skills</span>
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">CTF Challenges Completed</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">0</span>
-                            <span class="stat-label">Security Audits</span>
+                            <span class="stat-number">7+</span>
+                            <span class="stat-label">Web Development Projects Completed</span>
                         </div>
-                    </div> -->
+                        
+                    </div>
+                    
                 </div>
                 <div class="about-visual">
                     <div class="image-container">
@@ -273,6 +298,39 @@
                         <li>Platform to be open source soon.</li>                </div>
                 </div>
             </div>
+           
+            <div class="project-card">
+                <div class="project-image-container">
+                    <img src="/Citizen.png" alt="Shoptidy Project" class="project-image">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Citizen Safety Dashboard</h3>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">AI/ML</span>
+                        <span class="tag">SocketIo</span>
+                    </div>
+                    <div class="project-actions">
+                        <button class="action-button" onclick="toggleOverlay(this)">
+                            Learn More
+                        </button>
+                        <a href="#" class="action-button" style="pointer-events: none; color: #888;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 48 48"><path fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="4" d="M30.442 5c1.964 0 3.823.448 5.479 1.246l-3.204 3.18a4.671 4.671 0 0 0 0 6.64a4.753 4.753 0 0 0 6.687 0l2.853-2.832c.48 1.322.743 2.748.743 4.234c0 6.887-5.623 12.469-12.558 12.469c-1.66 0-3.244-.32-4.693-.9L13.07 41.625a4.751 4.751 0 0 1-6.685 0a4.67 4.67 0 0 1 0-6.637L18.952 22.51a12.35 12.35 0 0 1-1.069-5.042C17.883 10.582 23.506 5 30.442 5Z"/></svg>                            In Progress
+                        </a>
+                    </div>
+                </div>
+                <div class="project-overlay">
+                    <button class="close-overlay" onclick="toggleOverlay(this)">×</button>
+                    <div class="project-description">
+                        <h3>Citizen Safety Dashboard</h3>
+                        <li>Live CCTV Feeds</li>
+                        <li>Anomaly Detection</li>
+                        <li>Crime Hotspot Map</li>
+                        <li>SOS Function</li>
+                    </div>
+                </div>
+            </div>
             <div class="project-card">
                 <div class="project-image-container">
                     <img src="/Portfolio.png" alt="Shoptidy Project" class="project-image">
@@ -304,41 +362,6 @@
                         <li>Interactive and Responsive Design</li>
                             <li>Smooth User Experience</li>
                             <li>Custom Styling</li>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image-container">
-                    <img src="/Citizen.png" alt="Shoptidy Project" class="project-image">
-                </div>
-                <div class="project-content">
-                    <h3 class="project-title">Citizen Safety Dashboard</h3>
-                    <div class="project-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">Flask</span>
-                        <span class="tag">AI/ML</span>
-                        <span class="tag">SocketIo</span>
-                    </div>
-                    <div class="project-actions">
-                        <button class="action-button" onclick="toggleOverlay(this)">
-                            Learn More
-                        </button>
-                        <a href="#" class="action-button" style="pointer-events: none; color: #888;">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-                            </svg>
-                            Source Code
-                        </a>
-                    </div>
-                </div>
-                <div class="project-overlay">
-                    <button class="close-overlay" onclick="toggleOverlay(this)">×</button>
-                    <div class="project-description">
-                        <h3>Citizen Safety Dashboard</h3>
-                        <li>Live CCTV Feeds</li>
-                        <li>Anomaly Detection</li>
-                        <li>Crime Hotspot Map</li>
-                        <li>SOS Function</li>
                     </div>
                 </div>
             </div>
@@ -507,7 +530,7 @@
     <footer class="footer">
         <div class="footer-left">
             <span class="footer-name">Arbaaz Khan </span>
-            <span class="footer-professions">Cybersecurity Enthusiast • Ethical Hacker • Web Developer</span>
+            <span class="footer-professions">Cybersecurity Enthusiast  • Web Developer</span>
         </div>
         <div class="footer-links">
             <a href="#"><i class="fa fa-chevron-up" aria-hidden="true"></i></a>
