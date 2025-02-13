@@ -1420,6 +1420,10 @@ body {
     margin-bottom: 2rem;
 }
 
+.experience-item:hover{
+    transform: translateY(-12px);
+    transition: all 0.3s ease;
+}
 .experience-header {
     margin-bottom: 2rem;
 }
@@ -1499,6 +1503,11 @@ body {
     border-radius: 12px;
 }
 
+.achievement-item:hover{
+    transform: translateY(-15px);
+    transition: all 0.3s ease;
+   
+}
 .timeline-dot {
     position: absolute;
     left: -3rem;
