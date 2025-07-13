@@ -2932,3 +2932,22 @@ body {
   transform: translate(-50%, -50%) scale(1);
 }
 
+/* Winner Cards Section - Mobile Responsive */
+@media (max-width: 768px) {
+  .winner-cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .winner-card {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+  }
+  
+  .winner-card:not(:first-child) {
+    margin-top: 1rem;
+  }
+}
+
