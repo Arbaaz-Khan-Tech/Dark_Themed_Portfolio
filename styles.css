@@ -1,6 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Metal+Mania:wght@400&display=swap');
 
+
+/* Smooth container fix to avoid horizontal jiggle */
+html, body { height: 100%; }
+[data-scroll-container] { min-height: 100vh; }
+
+/* Subtle reveal-on-enter (pairs with data-scroll + data-scroll-class="is-inview") */
+.reveal { 
+  opacity: 0; 
+  transform: translateY(18px); 
+  transition: opacity .6s ease, transform .6s ease; 
+  will-change: transform, opacity;
+}
+.is-inview { 
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+/* Optional: reduce motion respects user setting */
+@media (prefers-reduced-motion: reduce) {
+  [data-scroll-container] { transform: none !important; }
+  .reveal { transition: none; opacity: 1; transform: none; }
+}
+
+/* Example mobile menu (if you want the toggle to work) */
+.nav__menu { transition: transform .3s ease, opacity .3s ease; }
+@media (max-width: 900px) {
+  .nav__menu { transform: translateY(-8px); opacity: 0; pointer-events: none; }
+  .nav__menu.is-open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+}
+
+
+
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -236,16 +268,16 @@ body {
   }
   
   .hero__headline {
-    line-height: 1.05;
-    font-weight: 900;
-    color: #fff;
-    margin-bottom: 1.2rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    gap: 0.5rem 1.5rem;
-    font-size: unset;
-  }
+  line-height: 1.05;
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  gap: 0.65rem ;
+  font-size: unset;
+}
   
   .hero__headline-main {
     font-family: 'Space Grotesk', 'Clash Display', 'Monument Extended', sans-serif;
@@ -390,8 +422,8 @@ body {
   
   .hero__social {
     position: absolute;
-    top: 50%;
-    right: 2.5rem;
+    top: 25%;
+    right: -20%;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
@@ -2859,12 +2891,13 @@ body {
   margin: 0 auto;
   padding: 2.2rem 2.2rem 2.8rem 2.2rem;
   position: relative;
-  transition: box-shadow 0.3s, transform 0.22s cubic-bezier(.4,0,.2,1);
+  transition: box-shadow 0.3s, transform 0.22s cubic-bezier(.4,0,.2,1), border-left 0.3s;
 }
 .winner-card:hover {
   box-shadow: 0 0 32px 8px #fff, 0 0 0 4px #fff, 0 0 0 8px #000, 0 12px 64px 0 rgba(255,255,255,0.22);
   transform: translateY(-8px) scale(1.025);
   z-index: 2;
+  border-left: 8px solid #fff;
 }
 .winner-card__photo {
   margin: 2.2rem 0 1.8rem 0;

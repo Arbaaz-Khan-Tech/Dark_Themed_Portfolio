@@ -1,3 +1,94 @@
+
+
+// Prefers-reduced-motion: disable smoothing if user requests less motion
+const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const scroller = document.querySelector('#smooth-scroll');
+
+  // Fallback: if Locomotive is missing, bail gracefully
+  if (!window.LocomotiveScroll || !scroller) {
+    console.warn('LocomotiveScroll not found or container missing. Parallax disabled.');
+    return;
+  }
+
+  const scroll = new LocomotiveScroll({
+    el: scroller,
+    smooth: !prefersReducedMotion,
+    lerp: 0.09,              // lower = smoother but longer catch-up
+    multiplier: 1,           // overall scroll speed
+    touchMultiplier: 2,      // feel snappy on touch
+    smartphone: { smooth: !prefersReducedMotion },
+    tablet: { smooth: !prefersReducedMotion }
+  });
+
+  // --- Optional: GSAP ScrollTrigger bridge (handy if you add timelines later)
+  if (window.gsap && window.ScrollTrigger) {
+    gsap.registerPlugin(ScrollTrigger);
+
+    ScrollTrigger.scrollerProxy(scroller, {
+      scrollTop(value) {
+        return arguments.length ? scroll.scrollTo(value, { duration: 0, disableLerp: true }) : scroll.scroll.instance.scroll.y;
+      },
+      getBoundingClientRect() {
+        return { top: 0, left: 0, width: window.innerWidth, height: window.innerHeight };
+      },
+      pinType: scroller.style.transform ? 'transform' : 'fixed'
+    });
+
+    scroll.on('scroll', ScrollTrigger.update);
+    ScrollTrigger.addEventListener('refresh', () => scroll.update());
+    ScrollTrigger.refresh();
+  }
+
+  // Smooth anchor links via Locomotive
+  document.querySelectorAll('.nav__link[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) {
+        scroll.scrollTo(target, {
+          offset: 0,
+          duration: 900,
+          easing: [0.25, 0.00, 0.35, 1.00] // "best model" = smooth, not floaty
+        });
+      }
+      // If you have a mobile menu, close it here:
+      const toggle = document.querySelector('.nav__toggle');
+      const menu = document.getElementById('nav-menu');
+      if (toggle && menu) {
+        toggle.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('is-open');
+      }
+    });
+  });
+
+  // Update on image load to fix layout shifts
+  document.querySelectorAll('img').forEach(img => {
+    if (img.complete) return;
+    img.addEventListener('load', () => scroll.update());
+    img.addEventListener('error', () => scroll.update());
+  });
+
+  // Force an update after fonts & first paint
+  window.addEventListener('load', () => {
+    setTimeout(() => scroll.update(), 50);
+  });
+
+  // (Optional) if you use a burger menu, toggle class
+  const toggle = document.querySelector('.nav__toggle');
+  const menu = document.getElementById('nav-menu');
+  if (toggle && menu) {
+    toggle.addEventListener('click', () => {
+      const expanded = toggle.getAttribute('aria-expanded') === 'true' || false;
+      toggle.setAttribute('aria-expanded', String(!expanded));
+      menu.classList.toggle('is-open');
+    });
+  }
+});
+
+
+
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav__toggle');
     const navMenu = document.querySelector('.nav__menu');
