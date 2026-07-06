@@ -3,39 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arbaaz - Web Developer & Cyber Analyst</title>
+    <title>Arbaaz Khan — Web Developer & Cyber Analyst</title>
     <link rel="icon" type="image/png" href="/ARBAAZ_LOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
-    <meta name="description" content="Arbaaz Khan's portfolio - Software Developer & Cyber Analyst. Explore projects, skills, achievements, and professional experience in web development and cybersecurity.">
-    <meta name="keywords" content="Arbaaz Khan, Software Developer, Cybersecurity, Portfolio, Web Developer, Hackathon Winner, Python, JavaScript, React, Node.js, Cyber Analyst, Security, Projects, Skills, Experience">
+    <meta name="description" content="Arbaaz Khan — Software Developer & Cyber Analyst. Web development and cybersecurity: secure, elegant digital systems, built below the surface.">
+    <meta name="keywords" content="Arbaaz Khan, Software Developer, Cybersecurity, Portfolio, Web Developer, Cyber Analyst, Python, JavaScript, React, Node.js">
     <meta name="author" content="Arbaaz Khan">
-    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Arbaaz Khan | Software Developer & Cyber Analyst">
-    <meta property="og:description" content="Explore Arbaaz Khan's portfolio: software projects, cybersecurity achievements, and professional experience.">
+    <meta property="og:title" content="Arbaaz Khan | Web Developer & Cyber Analyst">
+    <meta property="og:description" content="Secure, elegant digital systems — built below the surface.">
     <meta property="og:image" content="https://arbaazkhan.vercel.app/ARBAAZ_LOGO.png">
     <meta property="og:url" content="https://arbaazkhan.vercel.app/">
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Arbaaz Khan | Software Developer & Cyber Analyst">
-    <meta name="twitter:description" content="Explore Arbaaz Khan's portfolio: software projects, cybersecurity achievements, and professional experience.">
+    <meta name="twitter:title" content="Arbaaz Khan | Web Developer & Cyber Analyst">
     <meta name="twitter:image" content="https://arbaazkhan.vercel.app/ARBAAZ_LOGO.png">
-    <meta name="theme-color" content="#000000">
-    <meta name="copyright" content="Arbaaz Khan 2024">
-    <meta property="og:image:secure_url" content="https://arbaazkhan.vercel.app/ARBAAZ_LOGO.png">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:width" content="400">
-    <meta property="og:image:height" content="400">
-    <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_SITE_VERIFICATION_CODE_HERE"> -->
-    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#05080d">
     <link rel="canonical" href="https://arbaazkhan.vercel.app/">
-    
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -48,337 +35,286 @@
         "https://github.com/Arbaaz-Khan-Tech",
         "https://www.linkedin.com/in/arbaaz-khan-tech"
       ],
-      "description": "Arbaaz Khan is a software developer and cyber analyst specializing in web development, cybersecurity, and building secure digital solutions."
+      "description": "Arbaaz Khan is a software developer and cyber analyst specializing in web development, cybersecurity, and secure digital systems."
     }
     </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 </head>
 <body>
-    <header class="header">
-        <nav class="nav" role="navigation" aria-label="Main navigation">
-            <div class="nav__brand">
-             <a href="#" style="text-decoration: none; color: inherit;">  <h1 class="nav__logo">Arbaaz</h1> </a>
-            </div>
-            
-            <button class="nav__toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
-                <span class="nav__toggle-bar"></span>
-                <span class="nav__toggle-bar"></span>
-                <span class="nav__toggle-bar"></span>
-            </button>
+  <!-- Living water backdrop -->
+  <canvas id="fluid" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="sun" aria-hidden="true"></div>
 
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li> 
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-                    <li class="nav__item"><a href="#contact" class="nav__link">Connect</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <!-- Boot / dive-in overlay -->
+  <div class="boot" id="boot" aria-hidden="true">
+    <div class="boot__word"><span>ARBAAZ</span></div>
+    <div class="boot__line"><i></i></div>
+    <div class="boot__meta">entering the deep</div>
+  </div>
 
-  <div id="smooth-scroll" data-scroll-container>
+  <header class="nav" role="banner">
+    <a href="#hero" class="nav__brand" data-scroll-to>
+      <span class="nav__mark">◈</span> Arbaaz
+    </a>
+    <nav class="nav__links" aria-label="Main navigation">
+      <a href="#about" data-scroll-to>About</a>
+      <a href="#skills" data-scroll-to>Skills</a>
+      <a href="#work" data-scroll-to>Work</a>
+      <a href="#timeline" data-scroll-to>Timeline</a>
+      <a href="#awards" data-scroll-to>Awards</a>
+      <a href="#contact" class="nav__cta" data-scroll-to>Contact</a>
+    </nav>
+    <button class="nav__burger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
 
-    <section id="hero" class="hero" data-scroll-section>
-      <div class="hero__content" data-scroll data-scroll-class="is-inview" data-scroll-repeat>
-        <span class="hero__name-intro reveal">I am <span class="hero__name">Arbaaz Khan</span></span>
-
-        <h1 class="hero__headline">
-          <span class="hero__headline-main" data-scroll data-scroll-speed="2.2">WEB</span>
-          <span class="hero__headline-sub"  data-scroll data-scroll-speed="3.2">DEVELOPER</span>
-          <span class="hero__headline-and"  data-scroll data-scroll-speed="2.6">&</span>
-          <span class="hero__headline-main" data-scroll data-scroll-speed="2.0">CYBER</span>
-          <span class="hero__headline-sub"  data-scroll data-scroll-speed="3.0">ANALYST</span>
-        </h1>
-
-        <p class="hero__desc reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>
-          Crafting bold, secure digital experiences<br>
-          from elegant software design to bulletproof backend security.
-        </p>
-
-        <div class="hero__cta-row">
-          <div class="hero__cta reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>
-            <a href="#projects" class="btn btn--primary">View Projects</a>
-            <a href="#contact" class="btn btn--secondary">Hire Me</a>
-          </div>
-
-          <div class="hero__hackathon-badge" data-scroll data-scroll-speed="1.5">
-            <div class="hackathon-badge-imgbox">
-              <img src="/image.png" alt="3x Hackathon Winner Badge" class="hackathon-badge-img" />
-            </div>
-          </div>
-        </div>
-
-        <div class="hero__social" data-scroll data-scroll-speed="1.2">
-          <a href="https://github.com/Arbaaz-Khan-Tech" target="_blank" aria-label="GitHub" class="hero__icon">
-            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2C7.373 2 2 7.373 2 14c0 5.302 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.085 1.84 1.237 1.84 1.237 1.07 1.834 2.809 1.304 3.495.997.108-.775.418-1.305.762-1.606-2.665-.304-5.466-1.332-5.466-5.931 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.52 11.52 0 0 1 3.003-.404c1.019.005 2.047.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.654 1.653.243 2.873.12 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.804 5.625-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .32.218.694.825.576C22.565 23.797 26 19.299 26 14c0-6.627-5.373-12-12-12Z"/></svg>
-          </a>
-          <a href="https://www.linkedin.com/in/arbaaz-khan-tech" target="_blank" aria-label="LinkedIn" class="hero__icon">
-            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="24" height="24" rx="4"/><path d="M8 11v6M8 8v.01M12 11v6m0-3c0-1.657 2.686-1.657 2.686 0V17"/></svg>
-          </a>
-          <a href="mailto:arbaaz.khan.tech@gmail.com" aria-label="Email" class="hero__icon">
-            <svg width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="6" width="20" height="16" rx="3"/><path d="M4 8l10 7 10-7"/></svg>
-          </a>
-        </div>
-
-        <div class="hero__scroll-indicator" aria-hidden="true" data-scroll data-scroll-speed="2.4">
-          <span></span>
+  <main>
+    <!-- ───────────────────────── HERO ───────────────────────── -->
+    <section id="hero" class="hero">
+      <p class="hero__eyebrow reveal">
+        <span class="mono">33.9°N · 18.4°E</span> — working below the surface
+      </p>
+      <h1 class="hero__title">
+        <span class="reveal" data-d="1">I build</span>
+        <span class="reveal hero__accent" data-d="2"><em>secure</em></span>
+        <span class="reveal" data-d="3">digital</span>
+        <span class="reveal" data-d="4">systems.</span>
+      </h1>
+      <p class="hero__sub reveal" data-d="5">
+        Web developer &amp; cyber analyst. I design software that looks
+        effortless on the surface and holds its nerve underneath —
+        from elegant interfaces to bulletproof backends.
+      </p>
+      <div class="hero__row reveal" data-d="6">
+        <a href="#work" class="btn btn--solid" data-scroll-to>View the work</a>
+        <a href="#contact" class="btn btn--ghost" data-scroll-to>Hire me</a>
+        <div class="hero__badges" aria-label="Three-time hackathon winner">
+          <span class="mono">3×</span> hackathon winner
         </div>
       </div>
+      <div class="hero__social reveal" data-d="7">
+        <a href="https://github.com/Arbaaz-Khan-Tech" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/arbaaz-khan-tech" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:arbaaz.khan.tech@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <div class="scroll-hint" aria-hidden="true"><span></span>scroll</div>
     </section>
 
-    <section id="about" class="about" data-scroll-section>
-      <div class="about__container">
-        <div class="about__card about__text reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>
-          <h2 class="about__heading">About Me</h2>
-          <p class="about__desc">
-            I'm a <b>Web Developer and Cybersecurity Analyst</b> with a strong foundation in <b>JavaScript, Python and bash</b> scripting. I enjoy building efficient, secure solutions that blend functionality with clean code. Whether it's crafting applications, analyzing vulnerabilities, or automating tasks, I thrive on solving complex problems.<br><br>
-            With multiple <b>hackathon wins</b> under my belt, I’ve learned to think quickly, collaborate effectively, and deliver high-impact results under pressure. I’m always exploring new tech, especially at the intersection of development and security.
+    <!-- ───────────────────────── ABOUT ───────────────────────── -->
+    <section id="about" class="about section">
+      <span class="section__index mono">01 — profile</span>
+      <div class="about__grid">
+        <div class="glass about__bio reveal">
+          <h2 class="h2">Surface calm.<br>Depth engineered.</h2>
+          <p>
+            I'm a <strong>web developer and cybersecurity analyst</strong> grounded in
+            <strong>JavaScript, Python and Bash</strong>. I like building things that are
+            efficient and secure — applications that solve real problems, vulnerabilities
+            found before they're exploited, tedium automated away.
+          </p>
+          <p>
+            Multiple <strong>hackathon wins</strong> taught me to think fast, collaborate,
+            and ship under pressure. I live at the intersection of building and breaking.
           </p>
         </div>
-
-        <div class="about__right">
-          <div class="about__card about__photo-card" data-scroll data-scroll-speed="-1.2">
-            <div class="about__photo-wrapper">
-              <img src="Arbaaz_Khan.jpg" style="filter: grayscale(100%);" alt="Arbaaz Khan Portrait" class="about__photo" />
-              <span class="about__photo-tag">Web + Cybersecurity</span>
-            </div>
-          </div>
-
-          <div class="about__card about__stats about__stats--horizontal reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.6">
-            <div class="about__stat">
-              <span class="about__stat-number">1<span class="about__stat-plus">+</span></span>
-              <span class="about__stat-label">Year<br>Experience</span>
-            </div>
-            <div class="about__stat">
-              <span class="about__stat-number">10<span class="about__stat-plus">+</span></span>
-              <span class="about__stat-label">CTF<br>Challenges</span>
-            </div>
-            <div class="about__stat">
-              <span class="about__stat-number">7<span class="about__stat-plus">+</span></span>
-              <span class="about__stat-label">Web Dev<br>Projects</span>
-            </div>
+        <div class="about__side">
+          <figure class="glass about__portrait reveal">
+            <img src="Arbaaz_Khan.jpg" alt="Portrait of Arbaaz Khan" loading="lazy">
+            <figcaption class="mono">Web + Cybersecurity</figcaption>
+          </figure>
+          <div class="about__stats reveal">
+            <div class="stat"><span class="stat__num" data-count="1">0</span><span class="stat__plus">+</span><span class="stat__label mono">yr exp</span></div>
+            <div class="stat"><span class="stat__num" data-count="10">0</span><span class="stat__plus">+</span><span class="stat__label mono">CTFs</span></div>
+            <div class="stat"><span class="stat__num" data-count="7">0</span><span class="stat__plus">+</span><span class="stat__label mono">projects</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="skills" data-scroll-section>
-      <h2 class="section-title reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.8">Skills & Expertise</h2>
+    <!-- ───────────────────────── SKILLS ───────────────────────── -->
+    <section id="skills" class="skills section">
+      <span class="section__index mono">02 — the toolkit</span>
+      <h2 class="h2 skills__title">What I work with</h2>
 
-      <div class="skills-category">
-        <h3 class="category-title reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>Languages & Frameworks</h3>
-        <div class="skills-grid">
-          <!-- add subtle stagger with different speeds -->
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.3"><div class="skill-icon"><i class="fab fa-python"></i></div><span class="skill-name">Python</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.4"><div class="skill-icon"><i class="fab fa-js"></i></div><span class="skill-name">JavaScript</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.5"><div class="skill-icon"><i class="fas fa-code"></i></div><span class="skill-name">C</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.6"><div class="skill-icon"><i class="fab fa-react"></i></div><span class="skill-name">React</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.7"><div class="skill-icon"><i class="fab fa-node-js"></i></div><span class="skill-name">Node.js</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.8"><div class="skill-icon"><i class="fab fa-html5"></i></div><span class="skill-name">HTML/CSS</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.9"><div class="skill-icon"><i class="fas fa-database"></i></div><span class="skill-name">PostgresSQL/SQL</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="1.0"><div class="skill-icon"><i class="fas fa-database"></i></div><span class="skill-name">MongoDB</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="1.1"><div class="skill-icon"><i class="fas fa-pepper-hot"></i></div><span class="skill-name">Flask</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="1.2"><div class="skill-icon"><i class="fab fa-python"></i></div><span class="skill-name">Django</span></div>
+      <div class="skills__group">
+        <h3 class="skills__cat mono">languages &amp; frameworks</h3>
+        <div class="skills__grid">
+          <div class="chip reveal"><i class="fab fa-python"></i><span>Python</span></div>
+          <div class="chip reveal"><i class="fab fa-js"></i><span>JavaScript</span></div>
+          <div class="chip reveal"><i class="fas fa-code"></i><span>C</span></div>
+          <div class="chip reveal"><i class="fab fa-react"></i><span>React</span></div>
+          <div class="chip reveal"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+          <div class="chip reveal"><i class="fab fa-html5"></i><span>HTML / CSS</span></div>
+          <div class="chip reveal"><i class="fas fa-database"></i><span>PostgreSQL</span></div>
+          <div class="chip reveal"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
+          <div class="chip reveal"><i class="fas fa-flask"></i><span>Flask</span></div>
+          <div class="chip reveal"><i class="fab fa-python"></i><span>Django</span></div>
         </div>
       </div>
 
-      <div class="skills-category">
-        <h3 class="category-title reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>DevOps & Tools</h3>
-        <div class="skills-grid">
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.4"><div class="skill-icon"><i class="fab fa-git-alt"></i></div><span class="skill-name">Git</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.6"><div class="skill-icon"><i class="fab fa-docker"></i></div><span class="skill-name">Docker</span></div>
+      <div class="skills__group">
+        <h3 class="skills__cat mono">devops &amp; tools</h3>
+        <div class="skills__grid">
+          <div class="chip reveal"><i class="fab fa-git-alt"></i><span>Git</span></div>
+          <div class="chip reveal"><i class="fab fa-docker"></i><span>Docker</span></div>
         </div>
       </div>
 
-      <div class="skills-category">
-        <h3 class="category-title reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>Cybersecurity Tools</h3>
-        <div class="skills-grid">
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.4"><div class="skill-icon"><i class="fab fa-linux"></i></div><span class="skill-name">Kali Linux</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.6"><div class="skill-icon"><i class="fas fa-bug"></i></div><span class="skill-name">Metasploit</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.8"><div class="skill-icon"><i class="fas fa-network-wired"></i></div><span class="skill-name">Wireshark</span></div>
-          <div class="skill-card reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="1.0"><div class="skill-icon"><i class="fas fa-shield-alt"></i></div><span class="skill-name">Burp Suite</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="projects" data-scroll-section>
-      <div class="projects__header">
-        <div>
-          <h2 class="projects__title" data-scroll data-scroll-speed="1.4">Featured<br>Projects</h2>
-        </div>
-        <div class="projects__intro reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>
-          <p>A selection of my most impactful and innovative work, blending security, AI, and modern web technology.</p>
-        </div>
-      </div>
-
-      <div class="projects__mobile-msg reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>Tap a project to view its description.</div>
-
-      <div class="project-list">
-        <div class="project reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.5" data-desc="Cybersecurity chatbot for camera monitoring and link detection. Encrypted messaging for secure communication. Automated IP safety checks and password strength assessments. Real-time security alerts and password generation with an interactive UI.">
-          <div class="project__main"><span class="project__name">FireBot</span><span class="project__number">(01)</span></div>
-          <a href="https://github.com/Arbaaz-Khan-Tech/Fire-Bot" class="project__link" target="_blank">Source Code <i class="fas fa-arrow-up-right-from-square"></i></a>
-        </div>
-
-        <div class="project reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.7" data-desc="AI-driven platform for personalized career guidance with skill insights. Recommends colleges based on CET/JEE scores and provides admission guidance. Plans to integrate mentorship with industry experts. Platform to be open source soon.">
-          <div class="project__main"><span class="project__name">EduNavigator</span><span class="project__number">(02)</span></div>
-          <a href="https://github.com/Arbaaz-Khan-Tech/EduNavigator" class="project__link" target="_blank">Source Code <i class="fas fa-arrow-up-right-from-square"></i></a>
-        </div>
-
-        <div class="project reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.9" data-desc="Developed a platform for police and citizens to enhance public safety. Police access CCTV feeds and AI-driven alerts for gun violence and crimes. Citizens can report incidents, view nearby crime in real-time, set geofencing alerts, and engage with gamified features.">
-          <div class="project__main"><span class="project__name">Suraksha Seetu</span><span class="project__number">(03)</span></div>
-          <a href="https://github.com/Arbaaz-Khan-Tech/The-Sword" class="project__link" target="_blank">Source Code <i class="fas fa-arrow-up-right-from-square"></i></a>
-        </div>
-
-        <div class="project reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="1.1" data-desc="Interactive and Responsive Design. Smooth User Experience. Custom Styling.">
-          <div class="project__main"><span class="project__name">Personal Portfolio</span><span class="project__number">(04)</span></div>
-          <a href="https://github.com/Arbaaz-Khan-Tech/Dark_Themed_Portfolio" class="project__link" target="_blank">Source Code <i class="fas fa-arrow-up-right-from-square"></i></a>
-        </div>
-      </div>
-
-      <div id="project-tooltip" class="project-tooltip"></div>
-    </section>
-
-
-
-    
-    <section id="experience" class="experience" data-scroll-section>
-      <div class="experience__container">
-        <h2 class="section-title reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>Professional Experience</h2>
-        <div class="experience__list">
-           <div class="experience__item reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.6">
-            <div class="experience__header">
-              <h3 class="experience__role">Software Dev.</h3>
-              <span class="experience__duration">March 2026 - Current</span>
-            </div>
-            <div class="experience__company">
-              <span class="experience__company-name">Vizuara</span>
-            </div>
-          </div>
-          <div class="experience__item reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.6">
-            <div class="experience__header">
-              <h3 class="experience__role">Full Stack Dev.</h3>
-              <span class="experience__duration">SEP 2025 - Feb 2026</span>
-            </div>
-            <div class="experience__company">
-              <span class="experience__company-name">Vizuara</span>
-            </div>
-          </div>
-          <div class="experience__item reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat data-scroll-speed="0.6">
-            <div class="experience__header">
-              <h3 class="experience__role">Cybersecurity Intern</h3>
-              <span class="experience__duration">July 2024 - December 2024</span>
-            </div>
-            <div class="experience__company">
-              <span class="experience__company-name">Macksofy Technologies Pvt Ltd</span>
-            </div>
-          </div>
+      <div class="skills__group">
+        <h3 class="skills__cat mono">security</h3>
+        <div class="skills__grid">
+          <div class="chip reveal"><i class="fab fa-linux"></i><span>Kali Linux</span></div>
+          <div class="chip reveal"><i class="fas fa-bug"></i><span>Metasploit</span></div>
+          <div class="chip reveal"><i class="fas fa-network-wired"></i><span>Wireshark</span></div>
+          <div class="chip reveal"><i class="fas fa-shield-alt"></i><span>Burp Suite</span></div>
         </div>
       </div>
     </section>
 
-    <section id="extras" class="lux-winner-cards-section" data-scroll-section>
-      <div class="lux-winner-cards-container">
-        <h2 class="section-title reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>Extracurricular & Achievements</h2>
-        <div class="winner-cards-grid">
-          <div class="winner-card" data-scroll data-scroll-speed="0.8">
-            <div class="winner-card__badge"><span class="winner-card__badge-star">★</span><span class="winner-card__badge-num">1</span></div>
-            <div class="winner-card__photo"><img src="/CodeCrafters.png" alt="Winner Dummy" /></div>
-            <div class="winner-card__content">
-              <div class="winner-card__title">FIRST PRIZE<br>CODECRAFTERS NATIONAL-LEVEL HACKATHON</div>
-              <div class="winner-card__meta"><span class="winner-card__date">APRIL 2024</span><br><span class="winner-card__project">PROJECT - FIREBOT</span></div>
-            </div>
-          </div>
+    <!-- ───────────────────────── WORK ───────────────────────── -->
+    <section id="work" class="work section">
+      <span class="section__index mono">03 — selected work</span>
+      <h2 class="h2">Featured projects</h2>
+      <p class="work__intro reveal">A selection of the work I'm proudest of — where security, AI, and modern web meet. Hover any line to surface its detail.</p>
 
-          <div class="winner-card" data-scroll data-scroll-speed="1.0">
-            <div class="winner-card__badge"><span class="winner-card__badge-star">★</span><span class="winner-card__badge-num">2</span></div>
-            <div class="winner-card__photo"><img src="/AMITY.jpg" alt="Winner Dummy" /></div>
-            <div class="winner-card__content">
-              <div class="winner-card__title">SECOND PRIZE<br>NIRMAAN 3.0 HACKATHON</div>
-              <div class="winner-card__meta"><span class="winner-card__date">JANUARY 2025</span></div>
-            </div>
-          </div>
+      <ul class="work__list">
+        <li class="work__item reveal" data-desc="Cybersecurity chatbot for camera monitoring and link detection. Encrypted messaging, automated IP safety checks, password-strength assessment, real-time alerts and password generation in an interactive UI.">
+          <a href="https://github.com/Arbaaz-Khan-Tech/Fire-Bot" target="_blank" rel="noopener">
+            <span class="work__idx mono">(01)</span>
+            <span class="work__name">FireBot</span>
+            <span class="work__tags mono">security · chatbot</span>
+            <span class="work__arrow" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </a>
+        </li>
+        <li class="work__item reveal" data-desc="AI-driven platform for personalized career guidance and skill insights. Recommends colleges from CET/JEE scores, gives admission guidance, and plans mentorship with industry experts. Open source soon.">
+          <a href="https://github.com/Arbaaz-Khan-Tech/EduNavigator" target="_blank" rel="noopener">
+            <span class="work__idx mono">(02)</span>
+            <span class="work__name">EduNavigator</span>
+            <span class="work__tags mono">AI · edtech</span>
+            <span class="work__arrow" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </a>
+        </li>
+        <li class="work__item reveal" data-desc="A public-safety platform for police and citizens. Police get CCTV feeds and AI alerts for gun violence and crime; citizens report incidents, view nearby crime in real time, set geofencing alerts, and engage with gamified features.">
+          <a href="https://github.com/Arbaaz-Khan-Tech/The-Sword" target="_blank" rel="noopener">
+            <span class="work__idx mono">(03)</span>
+            <span class="work__name">Suraksha Seetu</span>
+            <span class="work__tags mono">AI · civic safety</span>
+            <span class="work__arrow" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </a>
+        </li>
+        <li class="work__item reveal" data-desc="Interactive, responsive design with a WebGL fluid backdrop, smooth locomotive scrolling, and custom motion — the site you're reading now.">
+          <a href="https://github.com/Arbaaz-Khan-Tech/Dark_Themed_Portfolio" target="_blank" rel="noopener">
+            <span class="work__idx mono">(04)</span>
+            <span class="work__name">This Portfolio</span>
+            <span class="work__tags mono">webgl · frontend</span>
+            <span class="work__arrow" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
+          </a>
+        </li>
+      </ul>
+    </section>
 
-          <div class="winner-card" data-scroll data-scroll-speed="1.2">
-            <div class="winner-card__badge"><span class="winner-card__badge-star">★</span><span class="winner-card__badge-num">3</span></div>
-            <div class="winner-card__photo"><img src="/Arbaaz_Khan.jpg" style="filter: grayscale(100%); object-fit: contain;" alt="Winner Dummy" /></div>
-            <div class="winner-card__content">
-              <div class="winner-card__title">TECHNICAL LEAD<br>HACK TO CRACK 2.0 <br> (H2C 2.0) HACKATHON</div>
-              <div class="winner-card__meta"><span class="winner-card__date">MARCH 2024</span></div>
-            </div>
-          </div>
+    <!-- ───────────────────────── TIMELINE ───────────────────────── -->
+    <section id="timeline" class="timeline section">
+      <span class="section__index mono">04 — the current</span>
+      <h2 class="h2">Where I've been working</h2>
+      <ol class="timeline__list">
+        <li class="timeline__item reveal">
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <span class="timeline__when mono">Mar 2026 — now</span>
+          <span class="timeline__role">Software Developer</span>
+          <span class="timeline__org">Vizuara</span>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <span class="timeline__when mono">Sep 2025 — Feb 2026</span>
+          <span class="timeline__role">Full-Stack Developer</span>
+          <span class="timeline__org">Vizuara</span>
+        </li>
+        <li class="timeline__item reveal">
+          <span class="timeline__dot" aria-hidden="true"></span>
+          <span class="timeline__when mono">Jul 2024 — Dec 2024</span>
+          <span class="timeline__role">Cybersecurity Intern</span>
+          <span class="timeline__org">Macksofy Technologies Pvt Ltd</span>
+        </li>
+      </ol>
+    </section>
 
-          <div class="winner-card" data-scroll data-scroll-speed="1.4">
-            <div class="winner-card__badge"><span class="winner-card__badge-star">★</span><span class="winner-card__badge-num">4</span></div>
-            <div class="winner-card__photo"><img src="/QASAR.jpg" alt="Winner Dummy" /></div>
-            <div class="winner-card__content">
-              <div class="winner-card__title">TRACK WINNER<br>QASAR 3.0<br>HACKATHON</div>
-              <div class="winner-card__meta"><span class="winner-card__date">MARCH 2025</span><br><span class="winner-card__project">PROJECT - EDUNAVIGATOR</span></div>
-            </div>
+    <!-- ───────────────────────── AWARDS ───────────────────────── -->
+    <section id="awards" class="awards section">
+      <span class="section__index mono">05 — surfacing</span>
+      <h2 class="h2">Wins &amp; recognition</h2>
+      <div class="awards__grid">
+        <article class="award reveal">
+          <div class="award__media"><img src="/CodeCrafters.png" alt="CodeCrafters hackathon win" loading="lazy"></div>
+          <div class="award__body">
+            <span class="award__rank mono">01 · first prize</span>
+            <h3 class="award__title">CodeCrafters National Hackathon</h3>
+            <p class="award__meta mono">Apr 2024 · project — FireBot</p>
           </div>
-        </div>
+        </article>
+        <article class="award reveal">
+          <div class="award__media"><img src="/AMITY.jpg" alt="Nirmaan 3.0 hackathon" loading="lazy"></div>
+          <div class="award__body">
+            <span class="award__rank mono">02 · second prize</span>
+            <h3 class="award__title">Nirmaan 3.0 Hackathon</h3>
+            <p class="award__meta mono">Jan 2025</p>
+          </div>
+        </article>
+        <article class="award reveal">
+          <div class="award__media"><img src="/Arbaaz_Khan.jpg" alt="Hack to Crack 2.0" loading="lazy" style="filter:grayscale(1)"></div>
+          <div class="award__body">
+            <span class="award__rank mono">03 · technical lead</span>
+            <h3 class="award__title">Hack to Crack 2.0 (H2C)</h3>
+            <p class="award__meta mono">Mar 2024</p>
+          </div>
+        </article>
+        <article class="award reveal">
+          <div class="award__media"><img src="/QASAR.jpg" alt="QASAR 3.0 track winner" loading="lazy"></div>
+          <div class="award__body">
+            <span class="award__rank mono">04 · track winner</span>
+            <h3 class="award__title">QASAR 3.0 Hackathon</h3>
+            <p class="award__meta mono">Mar 2025 · project — EduNavigator</p>
+          </div>
+        </article>
       </div>
     </section>
 
-    <section id="contact" class="contact-section" data-scroll-section>
-      <div class="contact-flex">
-        <div class="contact-envelope" data-scroll data-scroll-speed="-0.6">
-          <div class="contact-envelope__flap"><span class="contact-envelope__icon">✉️</span></div>
-          <h2 class="contact-title reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>Contact Me</h2>
-
-          <form class="contact-form" id="contact-form">
-            <div class="contact-form__row"><input type="text" name="name" id="name" class="contact-input" placeholder="Name" required /></div>
-            <div class="contact-form__row"><input type="email" name="email" id="email" class="contact-input" placeholder="Email" required /></div>
-            <div class="contact-form__row"><input type="tel" name="phone" class="contact-input" placeholder="Phone No (Optional)" /></div>
-            <div class="contact-form__row"><textarea name="message" id="message" class="contact-input contact-input--textarea" placeholder="Message" required></textarea></div>
-            <button type="submit" class="contact-btn submit-btn">Send Message</button>
-          </form>
-
-          <div id="successPopup" class="success-popup">Message sent successfully!</div>
-
-          <div class="contact-socials reveal" data-scroll data-scroll-class="is-inview" data-scroll-repeat>
-            <a href="https://github.com/Arbaaz-Khan-Tech" class="contact-social" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/arbaaz-khan-tech" class="contact-social" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:arbaaz.khan.tech@gmail.com" class="contact-social" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    <!-- ───────────────────────── CONTACT ───────────────────────── -->
+    <section id="contact" class="contact section">
+      <span class="section__index mono">06 — signal</span>
+      <div class="contact__grid">
+        <div class="contact__lead reveal">
+          <h2 class="h2">Let's build<br>something<br><em>that holds.</em></h2>
+          <p>Open to work in web development and cybersecurity. Send a message — I read everything.</p>
+          <div class="contact__direct mono">
+            <a href="mailto:arbaaz.khan.tech@gmail.com">arbaaz.khan.tech@gmail.com</a>
+            <div class="contact__socials">
+              <a href="https://github.com/Arbaaz-Khan-Tech" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/arbaaz-khan-tech" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
           </div>
         </div>
+        <form class="glass contact__form reveal" id="contact-form">
+          <label class="field"><span class="mono">name</span><input type="text" name="name" id="name" required autocomplete="name"></label>
+          <label class="field"><span class="mono">email</span><input type="email" name="email" id="email" required autocomplete="email"></label>
+          <label class="field"><span class="mono">phone <em>(optional)</em></span><input type="tel" name="phone" autocomplete="tel"></label>
+          <label class="field"><span class="mono">message</span><textarea name="message" id="message" rows="4" required></textarea></label>
+          <button type="submit" class="btn btn--solid submit-btn">Send message</button>
+          <div id="successPopup" class="success-popup" role="status">Message sent — I'll be in touch.</div>
+        </form>
       </div>
     </section>
+  </main>
 
-    <footer class="site-footer" data-scroll-section>
-      <div class="footer__container" data-scroll data-scroll-speed="-0.3">
-        <div class="footer__quicklinks">
-          <h3 class="footer__heading">Quick Links</h3>
-          <ul class="footer__links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__socials">
-          <h3 class="footer__heading">Connect</h3>
-          <div class="footer__icons">
-            <a href="https://github.com/Arbaaz-Khan-Tech" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/arbaaz-khan-tech" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:arbaaz.khan.tech@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-          </div>
-        </div>
-        <div class="footer__msg">
-          <p>Open to exciting opportunities in web development and cybersecurity.<br>Let's build something great together.</p>
-        </div>
-      </div>
-    </footer>
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="mono">© 2025 Arbaaz Khan — built below the surface</span>
+      <a href="#hero" class="footer__top mono" data-scroll-to>back to surface ↑</a>
+    </div>
+  </footer>
 
-  </div><!-- /#smooth-scroll -->
-
-  <!-- Locomotive + (optional) GSAP ScrollTrigger bridge -->
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
